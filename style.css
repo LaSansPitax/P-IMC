@@ -9,6 +9,14 @@
 h1{
   display:flex;
   justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-weight: 500;
+}
+
+.Bold{
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 body {
@@ -20,8 +28,10 @@ body {
 
 .container{
   background-color: white;
-  margin-right: 400px;
-  margin-left: 400px;
+  margin-right: 560px;
+  margin-left: 560px;
+  border-radius: 5px;
+  box-shadow: 2px 6px 15px -4px rgba(0, 0, 0, 1);
 }
 
 .form_container{
@@ -29,12 +39,64 @@ body {
   justify-content: center;
 }
 
+.description{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+::placeholder{
+  font-size: 17px;
+  padding-left: 10px;
+}
+
 .button{
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+button{
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: #ffcc33;
+  font-weight: 550;
 }
 
 .result{
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
+  font-size: 25px;
 }
+#size {
+ margin-right: 25px;
+ border: none;
+ box-shadow: 2px 6px 15px -4px rgba(0, 0, 0, 1);
+ border-radius: 5px;
+}
+
+#weight{
+  border: none;
+  box-shadow: 2px 6px 15px -4px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+#IMC{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 50px
+}
+
+input{
+  height: 50px;
+  width: 300px;
+}
+
+
