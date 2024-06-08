@@ -8,3 +8,25 @@ const BMIData = [
 ];
 
 // IMC = poids en kg / taille² en m
+
+let taille = document.getElementById('size');
+let poids = document.getElementById('weight');
+let result = document.querySelector('result');
+let button = document.querySelector('button');
+
+function calculeIMC(poids, taille){
+  taille = taille/100;
+  return (poids / (taille*taille)).tofixed(2);
+}
+
+button.addEventListener('click', function() {
+  const taille = parseFloat(tailleinput.value);
+  const poids = parseFloat(poidsinput.value);
+
+  if (isNaN(poids) || isNaN(taille)) {
+        resultDiv.textContent = 'Veuillez entrer des valeurs valides pour le poids et la taille.';
+        return;
+});
+
+
+
